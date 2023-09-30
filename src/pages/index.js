@@ -5,7 +5,6 @@ import AllNews from "@/components/UI/AllNews";
 
 
 const HomePage = ({ allNews }) => {
-  console.log(allNews);
   return (
     <>
       <Head>
