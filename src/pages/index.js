@@ -32,10 +32,12 @@ HomePage.getLayout = function getLayout(page) {
 export const getStaticProps = async () => {
   const res = await fetch('http://localhost:3123/news')
   const data = await res.json();
-  console.log(data);
   return {
     props: {
       allNews: data
-    }
+    },
+    revalidate: 1
   }
 }
+
+// hllo 
