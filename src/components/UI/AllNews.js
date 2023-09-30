@@ -8,7 +8,7 @@ const AllNews = ({ allNews }) => {
         <Row>
 
             {
-                allNews.map(news => (
+                allNews?.map(news => (
                     <Col span={6} key={news.id}>
                         <Card>
                             <Image src={news.image_url} width={300} height={180} alt='hello' />
